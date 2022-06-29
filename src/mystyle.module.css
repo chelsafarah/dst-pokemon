@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #e51c23;
+}
+
+.box {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13.1795px 13.1795px 19.7692px;
+  gap: 19.77px;
+
+  width: 257px;
+  height: 352.89px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 6.58974px rgba(0, 0, 0, 0.25);
+  border-radius: 19.7692px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.types {
+  padding: 6.58974px 13.1795px;
+  margin: 5px;
+  border-radius: 6.59px;
+}
+.titleName {
+  width: 115px;
+  height: 31px;
+  left: 70.84px;
+  top: 242.17px;
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.0641px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #e51c23;
+}
