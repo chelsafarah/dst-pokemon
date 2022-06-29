@@ -4,7 +4,7 @@ import bulbasaur from "../assets/bulbasaur.png";
 function Edit() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg shadow" style={styles.navbar}>
+      <nav className="navbar navbar-expand-lg shadow">
         <div className="container">
           <ul className="nav">
             <span>Detail Pokemon</span>
@@ -13,6 +13,12 @@ function Edit() {
       </nav>
       <div>
         <img src={bulbasaur} alt="" />
+        <div className={styles.container}>
+          <h2>Informasi Umum</h2>
+          <label>Nomor</label>
+          <br></br>
+          <label>Nama</label>
+        </div>
       </div>
     </div>
   );

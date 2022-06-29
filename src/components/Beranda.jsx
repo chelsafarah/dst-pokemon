@@ -3,6 +3,7 @@ import bulbasaur from "../assets/bulbasaur.png";
 import ivysaur from "../assets/ivysaur.png";
 import styles from "../mystyle.module.css";
 import Edit from "./Edit";
+import logo from "../assets/pokemon.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Beranda() {
@@ -19,15 +20,43 @@ function Beranda() {
   };
 
   return (
-    <div style={{ margin: "25px 50px", display: "flex" }}>
-      <Link to="/edit">
+    <div>
+      <div>
+        <nav className="navbar navbar-expand-lg shadow">
+          <div className="container">
+            <ul className="nav">
+              <img src={logo} alt="" style={{ height: "40px" }} />
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div style={{ margin: "25px 50px", display: "flex" }}>
+        <Link to="/edit" style={{ textDecoration: "none" }}>
+          <div className={styles.box}>
+            <div>
+              <h5 className="card-title text-muted" style={{ textAlign: "left" }}>
+                #001
+              </h5>
+              <img src={bulbasaur} alt="" style={{ image }} />
+              <h6 className={styles.titleName}>Bulbasaur</h6>
+              <div style={{ color: "white" }}>
+                <span className={styles.types} style={{ backgroundColor: "#8BC34A" }}>
+                  Grass
+                </span>
+                <span className={styles.types} style={{ backgroundColor: "#AA22B0" }}>
+                  Poison
+                </span>
+              </div>
+            </div>
+          </div>
+        </Link>
         <div className={styles.box}>
           <div>
             <h5 className="card-title text-muted" style={{ textAlign: "left" }}>
               #001
             </h5>
-            <img src={bulbasaur} alt="" style={{ image }} />
-            <h6 className={styles.titleName}>Bulbasaur</h6>
+            <img src={ivysaur} alt="" style={{ image }} />
+            <h6 className={styles.titleName}>Ivysaur</h6>
             <div style={{ color: "white" }}>
               <span className={styles.types} style={{ backgroundColor: "#8BC34A" }}>
                 Grass
@@ -36,23 +65,6 @@ function Beranda() {
                 Poison
               </span>
             </div>
-          </div>
-        </div>
-      </Link>
-      <div className={styles.box}>
-        <div>
-          <h5 className="card-title text-muted" style={{ textAlign: "left" }}>
-            #001
-          </h5>
-          <img src={ivysaur} alt="" style={{ image }} />
-          <h6 className={styles.titleName}>Ivysaur</h6>
-          <div style={{ color: "white" }}>
-            <span className={styles.types} style={{ backgroundColor: "#8BC34A" }}>
-              Grass
-            </span>
-            <span className={styles.types} style={{ backgroundColor: "#AA22B0" }}>
-              Poison
-            </span>
           </div>
         </div>
       </div>
